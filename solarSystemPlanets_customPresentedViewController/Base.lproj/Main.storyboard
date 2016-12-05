@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="solarSystemPlanets_customPresentedViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="galaxy" translatesAutoresizingMaskIntoConstraints="NO" id="ydh-5H-w0g" userLabel="background Image View"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solar System Planets" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xhv-tc-NrZ">
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="solarSystem" translatesAutoresizingMaskIntoConstraints="NO" id="3gO-9J-vyM" userLabel="solar system image"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HBt-2Z-cFe">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">The Solar System formed 4.6 billion years ago from the gravitational collapse of a giant interstellar molecular cloud. The vast majority of the system's mass is in the Sun, with most of the remaining mass contained in Jupiter. The four smaller inner planets, Mercury, Venus, Earth and Mars, are terrestrial planets, being primarily composed of rock and metal. The four outer planets are giant planets, being substantially more massive than the terrestrials. The two largest, Jupiter and Saturn, are gas giants, being composed mainly of hydrogen and helium; the two outermost planets, Uranus and Neptune, are ice giants, being composed mostly of substances with relatively high melting points compared with hydrogen and helium, called volatiles, such as water, ammonia and methane. All planets have almost circular orbits that lie within a nearly flat disc called the ecliptic.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5fP-7X-0vO">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ydh-5H-w0g" secondAttribute="trailing" constant="-16" id="09B-4L-Knb"/>
+                            <constraint firstItem="5fP-7X-0vO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2qO-Cc-V7I"/>
+                            <constraint firstItem="ydh-5H-w0g" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="3UR-8S-IeR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5fP-7X-0vO" secondAttribute="bottom" constant="10" id="591-d1-fol"/>
+                            <constraint firstItem="5fP-7X-0vO" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.32" id="BWZ-qw-2XL"/>
+                            <constraint firstItem="HBt-2Z-cFe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CDq-iB-ryd"/>
+                            <constraint firstItem="3gO-9J-vyM" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="G13-OD-Aga"/>
+                            <constraint firstItem="ydh-5H-w0g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="IGq-Nm-84v"/>
+                            <constraint firstItem="ydh-5H-w0g" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="N3f-MP-7On"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xhv-tc-NrZ" secondAttribute="trailing" id="PB8-HK-pjS"/>
+                            <constraint firstItem="3gO-9J-vyM" firstAttribute="top" secondItem="Xhv-tc-NrZ" secondAttribute="bottom" constant="8" id="Sif-Da-j96"/>
+                            <constraint firstItem="Xhv-tc-NrZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sn6-jI-UAr"/>
+                            <constraint firstItem="Xhv-tc-NrZ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="UnY-Xm-xMG"/>
+                            <constraint firstItem="5fP-7X-0vO" firstAttribute="top" relation="lessThanOrEqual" secondItem="HBt-2Z-cFe" secondAttribute="bottom" constant="13" id="VXO-mB-4zm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ydh-5H-w0g" secondAttribute="bottom" id="XsV-jF-a4S"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HBt-2Z-cFe" secondAttribute="trailing" id="e7Q-pM-GM0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5fP-7X-0vO" secondAttribute="trailing" id="fGl-xd-0qn"/>
+                            <constraint firstItem="3gO-9J-vyM" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="fIK-PO-XNL"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="HBt-2Z-cFe" secondAttribute="leading" id="g8p-Hb-Mx4"/>
+                            <constraint firstItem="ydh-5H-w0g" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gOE-Nv-pq6"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="5fP-7X-0vO" secondAttribute="leading" id="hBx-Bj-qHP"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Xhv-tc-NrZ" secondAttribute="leading" id="hTy-No-cdq"/>
+                            <constraint firstItem="ydh-5H-w0g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nLc-Rr-Gsr"/>
+                            <constraint firstItem="ydh-5H-w0g" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="qI5-2V-58Q"/>
+                            <constraint firstItem="3gO-9J-vyM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r4I-JB-iRf"/>
+                            <constraint firstItem="HBt-2Z-cFe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rRh-sD-2o6"/>
+                            <constraint firstItem="Xhv-tc-NrZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ssb-ZS-8VI"/>
+                            <constraint firstItem="HBt-2Z-cFe" firstAttribute="top" secondItem="3gO-9J-vyM" secondAttribute="bottom" constant="8" id="vBj-tv-u9Z"/>
+                            <constraint firstItem="HBt-2Z-cFe" firstAttribute="height" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="vTp-DT-sPL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.19999999999999" y="138.0809595202399"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="galaxy" width="1280" height="720"/>
+        <image name="solarSystem" width="605" height="327"/>
+    </resources>
+</document>
