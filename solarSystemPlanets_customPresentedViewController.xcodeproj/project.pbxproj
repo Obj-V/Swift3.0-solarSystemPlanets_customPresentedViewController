@@ -12,6 +12,7 @@
 		256700561DF5391100560A97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 256700541DF5391100560A97 /* Main.storyboard */; };
 		256700581DF5391100560A97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 256700571DF5391100560A97 /* Assets.xcassets */; };
 		2567005B1DF5391100560A97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 256700591DF5391100560A97 /* LaunchScreen.storyboard */; };
+		256700631DF5478B00560A97 /* PlanetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256700621DF5478B00560A97 /* PlanetDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		256700571DF5391100560A97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2567005A1DF5391100560A97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2567005C1DF5391100560A97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		256700621DF5478B00560A97 /* PlanetDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				256700501DF5391100560A97 /* AppDelegate.swift */,
 				256700521DF5391100560A97 /* ViewController.swift */,
+				256700621DF5478B00560A97 /* PlanetDetailViewController.swift */,
 				256700541DF5391100560A97 /* Main.storyboard */,
 				256700571DF5391100560A97 /* Assets.xcassets */,
 				256700591DF5391100560A97 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				256700531DF5391100560A97 /* ViewController.swift in Sources */,
+				256700631DF5478B00560A97 /* PlanetDetailViewController.swift in Sources */,
 				256700511DF5391100560A97 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

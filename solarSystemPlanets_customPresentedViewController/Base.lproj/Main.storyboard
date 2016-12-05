@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -74,6 +75,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="135.19999999999999" y="138.0809595202399"/>
+        </scene>
+        <!--Planet Detail View Controller-->
+        <scene sceneID="sl4-wn-gXd">
+            <objects>
+                <viewController id="q49-yL-Z1i" customClass="PlanetDetailViewController" customModule="solarSystemPlanets_customPresentedViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GKe-GB-OvM"/>
+                        <viewControllerLayoutGuide type="bottom" id="QrT-lA-eDq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tqB-a2-Kt2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cyf-Xc-xic" userLabel="Planet Image View">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Cyf-Xc-xic" secondAttribute="height" multiplier="1:1" id="wcr-Mx-2q3"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MVF-sp-3Um">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Planet Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTO-NY-Tzy">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TTO-NY-Tzy" firstAttribute="height" secondItem="tqB-a2-Kt2" secondAttribute="height" multiplier="0.1" id="0wL-0r-sJe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TTO-NY-Tzy" secondAttribute="trailing" id="9Y6-mz-gYB"/>
+                            <constraint firstItem="MVF-sp-3Um" firstAttribute="centerY" secondItem="tqB-a2-Kt2" secondAttribute="centerY" multiplier="1.5" id="Dgl-rj-6ph"/>
+                            <constraint firstItem="TTO-NY-Tzy" firstAttribute="centerX" secondItem="tqB-a2-Kt2" secondAttribute="centerX" id="IWZ-Ge-ZXT"/>
+                            <constraint firstItem="Cyf-Xc-xic" firstAttribute="centerX" secondItem="tqB-a2-Kt2" secondAttribute="centerX" id="NPr-gd-xmr"/>
+                            <constraint firstItem="Cyf-Xc-xic" firstAttribute="centerY" secondItem="tqB-a2-Kt2" secondAttribute="centerY" multiplier="0.5" id="Tx0-2r-Kww"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MVF-sp-3Um" secondAttribute="trailing" id="Xhy-OD-NAZ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="TTO-NY-Tzy" secondAttribute="leading" id="YcT-yq-h58"/>
+                            <constraint firstItem="MVF-sp-3Um" firstAttribute="height" secondItem="tqB-a2-Kt2" secondAttribute="height" multiplier="0.4" id="Zsx-HE-0ll"/>
+                            <constraint firstItem="MVF-sp-3Um" firstAttribute="centerX" secondItem="tqB-a2-Kt2" secondAttribute="centerX" id="fE0-vb-OkB"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="MVF-sp-3Um" secondAttribute="leading" id="jfy-eC-reX"/>
+                            <constraint firstItem="TTO-NY-Tzy" firstAttribute="centerY" secondItem="tqB-a2-Kt2" secondAttribute="centerY" id="ouU-bK-UVn"/>
+                            <constraint firstItem="Cyf-Xc-xic" firstAttribute="height" secondItem="tqB-a2-Kt2" secondAttribute="height" multiplier="0.4" id="zCI-Wl-Giw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3hc-mz-LRA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="840.79999999999995" y="137.18140929535232"/>
         </scene>
     </scenes>
     <resources>
