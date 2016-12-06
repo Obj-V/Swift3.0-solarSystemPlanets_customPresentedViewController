@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="q49-yL-Z1i">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -30,7 +29,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="solarSystem" translatesAutoresizingMaskIntoConstraints="NO" id="3gO-9J-vyM" userLabel="solar system image"/>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HBt-2Z-cFe">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">The Solar System formed 4.6 billion years ago from the gravitational collapse of a giant interstellar molecular cloud. The vast majority of the system's mass is in the Sun, with most of the remaining mass contained in Jupiter. The four smaller inner planets, Mercury, Venus, Earth and Mars, are terrestrial planets, being primarily composed of rock and metal. The four outer planets are giant planets, being substantially more massive than the terrestrials. The two largest, Jupiter and Saturn, are gas giants, being composed mainly of hydrogen and helium; the two outermost planets, Uranus and Neptune, are ice giants, being composed mostly of substances with relatively high melting points compared with hydrogen and helium, called volatiles, such as water, ammonia and methane. All planets have almost circular orbits that lie within a nearly flat disc called the ecliptic.</mutableString>
+                                <string key="text">The Solar System formed 4.6 billion years ago from the gravitational collapse of a giant interstellar molecular cloud. The vast majority of the system's mass is in the Sun, with most of the remaining mass contained in Jupiter. The four smaller inner planets, Mercury, Venus, Earth and Mars, are terrestrial planets, being primarily composed of rock and metal. The four outer planets are giant planets, being substantially more massive than the terrestrials. The two largest, Jupiter and Saturn, are gas giants, being composed mainly of hydrogen and helium; the two outermost planets, Uranus and Neptune, are ice giants, being composed mostly of substances with relatively high melting points compared with hydrogen and helium, called volatiles, such as water, ammonia and methane. All planets have almost circular orbits that lie within a nearly flat disc called the ecliptic.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -74,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135.19999999999999" y="138.0809595202399"/>
+            <point key="canvasLocation" x="-34" y="137"/>
         </scene>
         <!--Planet Detail View Controller-->
         <scene sceneID="sl4-wn-gXd">
@@ -88,40 +87,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cyf-Xc-xic" userLabel="Planet Image View">
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Cyf-Xc-xic" secondAttribute="height" multiplier="1:1" id="wcr-Mx-2q3"/>
-                                </constraints>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MVF-sp-3Um">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Planet Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTO-NY-Tzy">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6w1-c0-dGt" userLabel="PlanetViewContainer"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="TTO-NY-Tzy" firstAttribute="height" secondItem="tqB-a2-Kt2" secondAttribute="height" multiplier="0.1" id="0wL-0r-sJe"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="TTO-NY-Tzy" secondAttribute="trailing" id="9Y6-mz-gYB"/>
+                            <constraint firstItem="6w1-c0-dGt" firstAttribute="centerX" secondItem="tqB-a2-Kt2" secondAttribute="centerX" id="4vy-QD-FNs"/>
                             <constraint firstItem="MVF-sp-3Um" firstAttribute="centerY" secondItem="tqB-a2-Kt2" secondAttribute="centerY" multiplier="1.5" id="Dgl-rj-6ph"/>
-                            <constraint firstItem="TTO-NY-Tzy" firstAttribute="centerX" secondItem="tqB-a2-Kt2" secondAttribute="centerX" id="IWZ-Ge-ZXT"/>
-                            <constraint firstItem="Cyf-Xc-xic" firstAttribute="centerX" secondItem="tqB-a2-Kt2" secondAttribute="centerX" id="NPr-gd-xmr"/>
-                            <constraint firstItem="Cyf-Xc-xic" firstAttribute="centerY" secondItem="tqB-a2-Kt2" secondAttribute="centerY" multiplier="0.5" id="Tx0-2r-Kww"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="MVF-sp-3Um" secondAttribute="trailing" id="Xhy-OD-NAZ"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="TTO-NY-Tzy" secondAttribute="leading" id="YcT-yq-h58"/>
+                            <constraint firstItem="6w1-c0-dGt" firstAttribute="height" secondItem="tqB-a2-Kt2" secondAttribute="height" multiplier="0.5" id="P1i-yA-TwY"/>
+                            <constraint firstItem="6w1-c0-dGt" firstAttribute="width" secondItem="tqB-a2-Kt2" secondAttribute="width" multiplier="0.9" id="Sus-te-fh5"/>
                             <constraint firstItem="MVF-sp-3Um" firstAttribute="height" secondItem="tqB-a2-Kt2" secondAttribute="height" multiplier="0.4" id="Zsx-HE-0ll"/>
+                            <constraint firstItem="6w1-c0-dGt" firstAttribute="centerY" secondItem="tqB-a2-Kt2" secondAttribute="centerY" multiplier="0.6" id="d9N-hy-3Hc"/>
                             <constraint firstItem="MVF-sp-3Um" firstAttribute="centerX" secondItem="tqB-a2-Kt2" secondAttribute="centerX" id="fE0-vb-OkB"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="MVF-sp-3Um" secondAttribute="leading" id="jfy-eC-reX"/>
-                            <constraint firstItem="TTO-NY-Tzy" firstAttribute="centerY" secondItem="tqB-a2-Kt2" secondAttribute="centerY" id="ouU-bK-UVn"/>
-                            <constraint firstItem="Cyf-Xc-xic" firstAttribute="height" secondItem="tqB-a2-Kt2" secondAttribute="height" multiplier="0.4" id="zCI-Wl-Giw"/>
+                            <constraint firstItem="MVF-sp-3Um" firstAttribute="width" secondItem="tqB-a2-Kt2" secondAttribute="width" multiplier="0.9" id="kpp-Tb-9Xg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="planetDetailTextView" destination="MVF-sp-3Um" id="WcM-he-7hq"/>
+                        <outlet property="planetViewContainer" destination="6w1-c0-dGt" id="9ZF-i3-CzP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3hc-mz-LRA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
