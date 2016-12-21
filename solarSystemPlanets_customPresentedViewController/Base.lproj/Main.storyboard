@@ -73,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-34" y="137"/>
+            <point key="canvasLocation" x="33" y="137"/>
         </scene>
         <!--Planet Detail View Controller-->
         <scene sceneID="sl4-wn-gXd">
@@ -93,7 +93,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6w1-c0-dGt" userLabel="PlanetViewContainer"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6w1-c0-dGt" userLabel="PlanetViewContainer" customClass="PlanetView" customModule="solarSystemPlanets_customPresentedViewController" customModuleProvider="target"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -109,7 +109,7 @@
                     </view>
                     <connections>
                         <outlet property="planetDetailTextView" destination="MVF-sp-3Um" id="WcM-he-7hq"/>
-                        <outlet property="planetViewContainer" destination="6w1-c0-dGt" id="9ZF-i3-CzP"/>
+                        <outlet property="planetView" destination="6w1-c0-dGt" id="6iA-4L-eio"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3hc-mz-LRA" userLabel="First Responder" sceneMemberID="firstResponder"/>
