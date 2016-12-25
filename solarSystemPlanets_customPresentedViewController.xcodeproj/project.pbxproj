@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		253F51741E0F24420090E7C2 /* PlanetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253F51731E0F24410090E7C2 /* PlanetModel.swift */; };
 		256700511DF5391100560A97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256700501DF5391100560A97 /* AppDelegate.swift */; };
 		256700531DF5391100560A97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256700521DF5391100560A97 /* ViewController.swift */; };
 		256700561DF5391100560A97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 256700541DF5391100560A97 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		253F51731E0F24410090E7C2 /* PlanetModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetModel.swift; sourceTree = "<group>"; };
 		2567004D1DF5391100560A97 /* solarSystemPlanets_customPresentedViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = solarSystemPlanets_customPresentedViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		256700501DF5391100560A97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		256700521DF5391100560A97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				256700501DF5391100560A97 /* AppDelegate.swift */,
+				253F51731E0F24410090E7C2 /* PlanetModel.swift */,
 				256700521DF5391100560A97 /* ViewController.swift */,
 				256700621DF5478B00560A97 /* PlanetDetailViewController.swift */,
 				256700541DF5391100560A97 /* Main.storyboard */,
@@ -151,6 +154,7 @@
 				256700631DF5478B00560A97 /* PlanetDetailViewController.swift in Sources */,
 				256700671DF69BC300560A97 /* PlanetView.swift in Sources */,
 				256700511DF5391100560A97 /* AppDelegate.swift in Sources */,
+				253F51741E0F24420090E7C2 /* PlanetModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +318,7 @@
 				256700611DF5391100560A97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
