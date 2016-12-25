@@ -12,31 +12,50 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
     
+    var imageViewArray:Array<UIImageView>!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.layoutIfNeeded()
+        imageViewArray = Array()
         setupScrollView()
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        if imageViewArray != nil {
+            adjustScrollViewSubviews()
+        }
     }
 }
 
 extension ViewController : UIScrollViewDelegate {
     func setupScrollView() {
+        let numberOfPlanets = PlanetModel.allPlanets().count
+        scrollView.isScrollEnabled = true
+        scrollView.bounces = true
+        scrollView.backgroundColor = UIColor.black
+        
+        for i in 0..<numberOfPlanets {
+            let imageView = UIImageView(image: UIImage(named: "mercury"))
+            imageView.tag = i
+            imageView.isUserInteractionEnabled = true
+            imageView.contentMode = UIViewContentMode.scaleAspectFit
+            imageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(ViewController.tappedImageView(_:))))
+            imageViewArray.append(imageView)
+            scrollView.addSubview(imageView)
+        }
+    }
+    
+    func adjustScrollViewSubviews() {
         let imageWidth = scrollView.bounds.size.width/3
         let imageHeight = scrollView.bounds.size.height
         let numberOfPlanets = PlanetModel.allPlanets().count
         scrollView.contentSize = CGSize(width: CGFloat(numberOfPlanets) * imageWidth, height: imageHeight);
-        scrollView.isScrollEnabled = true
-        scrollView.bounces = true
         
         for i in 0..<numberOfPlanets {
-            let imageView = UIImageView(frame: CGRect(x: CGFloat(i) * imageWidth, y: 0, width: imageWidth, height: imageHeight))
-            imageView.image = UIImage(named: "galaxy")
-            imageView.tag = i
-            imageView.isUserInteractionEnabled = true
-            imageView.layer.cornerRadius = 20
-            imageView.layer.masksToBounds = true
-            imageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(ViewController.tappedImageView(_:))))
-            scrollView.addSubview(imageView)
+            let imgView = imageViewArray[i]
+            imgView.frame = CGRect(x: CGFloat(i) * imageWidth, y: 0, width: imageWidth, height: imageHeight)
         }
     }
     
@@ -44,6 +63,5 @@ extension ViewController : UIScrollViewDelegate {
         let tappedImg = tap.view as? UIImageView
         print("\(tappedImg?.tag)")
     }
-    
 }
 
