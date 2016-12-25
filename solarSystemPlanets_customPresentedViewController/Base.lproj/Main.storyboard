@@ -79,10 +79,10 @@
             </objects>
             <point key="canvasLocation" x="33" y="137"/>
         </scene>
-        <!--Planet Detail View Controller-->
+        <!--PlanetDetailViewController-->
         <scene sceneID="sl4-wn-gXd">
             <objects>
-                <viewController id="q49-yL-Z1i" customClass="PlanetDetailViewController" customModule="solarSystemPlanets_customPresentedViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PlanetDetailViewController" title="PlanetDetailViewController" id="q49-yL-Z1i" customClass="PlanetDetailViewController" customModule="solarSystemPlanets_customPresentedViewController" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GKe-GB-OvM"/>
                         <viewControllerLayoutGuide type="bottom" id="QrT-lA-eDq"/>
