@@ -21,17 +21,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="galaxy" translatesAutoresizingMaskIntoConstraints="NO" id="ydh-5H-w0g" userLabel="background Image View"/>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solar System Planets" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xhv-tc-NrZ">
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space" translatesAutoresizingMaskIntoConstraints="NO" id="ydh-5H-w0g" userLabel="background Image View"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solar System Planets" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xhv-tc-NrZ">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="27"/>
+                                <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="solarSystem" translatesAutoresizingMaskIntoConstraints="NO" id="3gO-9J-vyM" userLabel="solar system image"/>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HBt-2Z-cFe">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HBt-2Z-cFe">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">The Solar System formed 4.6 billion years ago from the gravitational collapse of a giant interstellar molecular cloud. The vast majority of the system's mass is in the Sun, with most of the remaining mass contained in Jupiter. The four smaller inner planets, Mercury, Venus, Earth and Mars, are terrestrial planets, being primarily composed of rock and metal. The four outer planets are giant planets, being substantially more massive than the terrestrials. The two largest, Jupiter and Saturn, are gas giants, being composed mainly of hydrogen and helium; the two outermost planets, Uranus and Neptune, are ice giants, being composed mostly of substances with relatively high melting points compared with hydrogen and helium, called volatiles, such as water, ammonia and methane. All planets have almost circular orbits that lie within a nearly flat disc called the ecliptic.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5fP-7X-0vO">
@@ -73,6 +75,7 @@
                     </view>
                     <connections>
                         <outlet property="scrollView" destination="5fP-7X-0vO" id="wJK-8w-QZh"/>
+                        <outlet property="textView" destination="HBt-2Z-cFe" id="BDs-xk-2sg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -91,19 +94,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MVF-sp-3Um">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blackSpace" translatesAutoresizingMaskIntoConstraints="NO" id="rPK-Vj-fgK"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MVF-sp-3Um">
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6w1-c0-dGt" userLabel="PlanetViewContainer" customClass="PlanetView" customModule="solarSystemPlanets_customPresentedViewController" customModuleProvider="target"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6w1-c0-dGt" userLabel="PlanetViewContainer" customClass="PlanetView" customModule="solarSystemPlanets_customPresentedViewController" customModuleProvider="target">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMi-ZQ-V28">
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="AMi-ZQ-V28" secondAttribute="height" multiplier="1:1" id="4Y2-bM-v66"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="X"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="dismissButtonPressed:" destination="q49-yL-Z1i" eventType="touchUpInside" id="pLg-JA-cEv"/>
                                 </connections>
@@ -111,17 +120,25 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="rPK-Vj-fgK" secondAttribute="trailing" constant="-16" id="1HP-Dh-Sp8"/>
+                            <constraint firstItem="rPK-Vj-fgK" firstAttribute="centerY" secondItem="tqB-a2-Kt2" secondAttribute="centerY" id="1oF-Rs-BSf"/>
                             <constraint firstItem="6w1-c0-dGt" firstAttribute="centerX" secondItem="tqB-a2-Kt2" secondAttribute="centerX" id="4vy-QD-FNs"/>
                             <constraint firstItem="MVF-sp-3Um" firstAttribute="centerY" secondItem="tqB-a2-Kt2" secondAttribute="centerY" multiplier="1.5" id="Dgl-rj-6ph"/>
                             <constraint firstItem="AMi-ZQ-V28" firstAttribute="trailing" secondItem="6w1-c0-dGt" secondAttribute="trailing" id="FAQ-1r-cFh"/>
+                            <constraint firstItem="rPK-Vj-fgK" firstAttribute="leading" secondItem="tqB-a2-Kt2" secondAttribute="leadingMargin" constant="-16" id="LIM-CJ-efA"/>
                             <constraint firstItem="AMi-ZQ-V28" firstAttribute="width" secondItem="tqB-a2-Kt2" secondAttribute="width" multiplier="0.1" id="LdY-W1-wtA"/>
                             <constraint firstItem="6w1-c0-dGt" firstAttribute="height" secondItem="tqB-a2-Kt2" secondAttribute="height" multiplier="0.5" id="P1i-yA-TwY"/>
                             <constraint firstItem="6w1-c0-dGt" firstAttribute="width" secondItem="tqB-a2-Kt2" secondAttribute="width" multiplier="0.9" id="Sus-te-fh5"/>
+                            <constraint firstItem="rPK-Vj-fgK" firstAttribute="centerX" secondItem="tqB-a2-Kt2" secondAttribute="centerX" id="UNy-s4-ihG"/>
                             <constraint firstItem="MVF-sp-3Um" firstAttribute="height" secondItem="tqB-a2-Kt2" secondAttribute="height" multiplier="0.4" id="Zsx-HE-0ll"/>
                             <constraint firstItem="AMi-ZQ-V28" firstAttribute="top" secondItem="6w1-c0-dGt" secondAttribute="top" id="bwJ-qN-VsL"/>
                             <constraint firstItem="6w1-c0-dGt" firstAttribute="centerY" secondItem="tqB-a2-Kt2" secondAttribute="centerY" multiplier="0.6" id="d9N-hy-3Hc"/>
                             <constraint firstItem="MVF-sp-3Um" firstAttribute="centerX" secondItem="tqB-a2-Kt2" secondAttribute="centerX" id="fE0-vb-OkB"/>
+                            <constraint firstItem="rPK-Vj-fgK" firstAttribute="top" secondItem="GKe-GB-OvM" secondAttribute="bottom" constant="-20" id="ghk-4F-xBf"/>
                             <constraint firstItem="MVF-sp-3Um" firstAttribute="width" secondItem="tqB-a2-Kt2" secondAttribute="width" multiplier="0.9" id="kpp-Tb-9Xg"/>
+                            <constraint firstItem="rPK-Vj-fgK" firstAttribute="width" secondItem="tqB-a2-Kt2" secondAttribute="width" id="lOg-cf-9zR"/>
+                            <constraint firstItem="rPK-Vj-fgK" firstAttribute="height" secondItem="tqB-a2-Kt2" secondAttribute="height" id="pZi-an-vRQ"/>
+                            <constraint firstItem="QrT-lA-eDq" firstAttribute="top" secondItem="rPK-Vj-fgK" secondAttribute="bottom" id="uOb-5Q-FEs"/>
                         </constraints>
                     </view>
                     <connections>
@@ -135,7 +152,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="galaxy" width="1280" height="720"/>
+        <image name="blackSpace" width="1280" height="800"/>
         <image name="solarSystem" width="605" height="327"/>
+        <image name="space" width="1280" height="720"/>
     </resources>
 </document>

@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var textView: UITextView!
     
     var imageViewArray:Array<UIImageView>!
     
@@ -23,6 +24,7 @@ class ViewController: UIViewController {
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+        textView.setContentOffset(CGPoint(x: 0, y: 0), animated: false)
         if imageViewArray != nil {
             adjustScrollViewSubviews()
         }
