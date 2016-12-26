@@ -31,14 +31,15 @@ class ViewController: UIViewController {
 
 extension ViewController : UIScrollViewDelegate {
     func setupScrollView() {
-        let numberOfPlanets = PlanetModel.allPlanets().count
+        let planets = PlanetModel.allPlanets()
+        let numberOfPlanets = planets.count
         scrollView.isScrollEnabled = true
         scrollView.bounces = true
         scrollView.backgroundColor = UIColor.black
         scrollView.delegate = self
         
         for i in 0..<numberOfPlanets {
-            let imageView = UIImageView(image: UIImage(named: "mercury"))
+            let imageView = UIImageView(image: UIImage(named: planets[i].imageName))
             imageView.tag = i
             imageView.isUserInteractionEnabled = true
             imageView.contentMode = UIViewContentMode.scaleAspectFit
@@ -65,6 +66,7 @@ extension ViewController : UIScrollViewDelegate {
         print("\(tappedImg?.tag)")
         let planetDetailVC = storyboard!.instantiateViewController(withIdentifier: "PlanetDetailViewController") as! PlanetDetailViewController
         planetDetailVC.originalFrame = view.convert((tappedImg?.frame)!, from: scrollView)
+        planetDetailVC.planetInfo = PlanetModel.allPlanets()[(tappedImg?.tag)!]
         self.present(planetDetailVC, animated: true, completion: nil)
     }
     

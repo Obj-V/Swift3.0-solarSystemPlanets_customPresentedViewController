@@ -10,10 +10,20 @@ import UIKit
 
 class PlanetDetailViewController: UIViewController {
 
-    @IBOutlet weak var planetView: PlanetView!
-    @IBOutlet weak var planetDetailTextView: UITextView!
+    @IBOutlet weak var planetView: PlanetView! {
+        didSet {
+            planetView.planetNameLabel.text = planetInfo.name
+            planetView.planetImageView.image = UIImage(named: planetInfo.imageName)
+        }
+    }
+    @IBOutlet weak var planetDetailTextView: UITextView! {
+        didSet {
+            planetDetailTextView.text = planetInfo.description
+        }
+    }
     
     var originalFrame:CGRect!
+    var planetInfo:PlanetModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
