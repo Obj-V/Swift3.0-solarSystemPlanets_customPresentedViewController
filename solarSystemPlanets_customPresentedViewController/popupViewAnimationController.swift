@@ -10,7 +10,7 @@ import UIKit
 
 class popupViewAnimationController: NSObject, UIViewControllerAnimatedTransitioning {
 
-    let duration = 4.0
+    let duration = 1.0
     var isPresenting = true
     var originalFrame = CGRect.zero
     
@@ -23,6 +23,8 @@ class popupViewAnimationController: NSObject, UIViewControllerAnimatedTransition
         let fromVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from)
         let toVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to)
         let animatedVC = isPresenting ? toVC! : fromVC!
+        containerView.addSubview((toVC?.view)!)
+        containerView.bringSubview(toFront: animatedVC.view)
         
         let initialFrame = isPresenting ? originalFrame : animatedVC.view.frame
         let finalFrame = isPresenting ? animatedVC.view.frame : originalFrame
@@ -34,7 +36,8 @@ class popupViewAnimationController: NSObject, UIViewControllerAnimatedTransition
         if isPresenting {
             animatedVC.view.transform = scaleTransform
             animatedVC.view.center = CGPoint(x: (initialFrame.midX), y: (initialFrame.midY))
-            containerView.addSubview((animatedVC.view)!)
+        } else {
+            animatedVC.view.transform = CGAffineTransform.identity
         }
         
         UIView.animate(withDuration: duration, delay: 0.0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0.0, options: [], animations: {

@@ -19,6 +19,9 @@ class PlanetDetailViewController: UIViewController {
         super.viewDidLoad()
         self.transitioningDelegate = self
     }
+    @IBAction func dismissButtonPressed(_ sender: AnyObject) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }
 
 extension PlanetDetailViewController : UIViewControllerTransitioningDelegate {

@@ -98,14 +98,27 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6w1-c0-dGt" userLabel="PlanetViewContainer" customClass="PlanetView" customModule="solarSystemPlanets_customPresentedViewController" customModuleProvider="target"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMi-ZQ-V28">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="AMi-ZQ-V28" secondAttribute="height" multiplier="1:1" id="4Y2-bM-v66"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="X"/>
+                                <connections>
+                                    <action selector="dismissButtonPressed:" destination="q49-yL-Z1i" eventType="touchUpInside" id="pLg-JA-cEv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="6w1-c0-dGt" firstAttribute="centerX" secondItem="tqB-a2-Kt2" secondAttribute="centerX" id="4vy-QD-FNs"/>
                             <constraint firstItem="MVF-sp-3Um" firstAttribute="centerY" secondItem="tqB-a2-Kt2" secondAttribute="centerY" multiplier="1.5" id="Dgl-rj-6ph"/>
+                            <constraint firstItem="AMi-ZQ-V28" firstAttribute="trailing" secondItem="6w1-c0-dGt" secondAttribute="trailing" id="FAQ-1r-cFh"/>
+                            <constraint firstItem="AMi-ZQ-V28" firstAttribute="width" secondItem="tqB-a2-Kt2" secondAttribute="width" multiplier="0.1" id="LdY-W1-wtA"/>
                             <constraint firstItem="6w1-c0-dGt" firstAttribute="height" secondItem="tqB-a2-Kt2" secondAttribute="height" multiplier="0.5" id="P1i-yA-TwY"/>
                             <constraint firstItem="6w1-c0-dGt" firstAttribute="width" secondItem="tqB-a2-Kt2" secondAttribute="width" multiplier="0.9" id="Sus-te-fh5"/>
                             <constraint firstItem="MVF-sp-3Um" firstAttribute="height" secondItem="tqB-a2-Kt2" secondAttribute="height" multiplier="0.4" id="Zsx-HE-0ll"/>
+                            <constraint firstItem="AMi-ZQ-V28" firstAttribute="top" secondItem="6w1-c0-dGt" secondAttribute="top" id="bwJ-qN-VsL"/>
                             <constraint firstItem="6w1-c0-dGt" firstAttribute="centerY" secondItem="tqB-a2-Kt2" secondAttribute="centerY" multiplier="0.6" id="d9N-hy-3Hc"/>
                             <constraint firstItem="MVF-sp-3Um" firstAttribute="centerX" secondItem="tqB-a2-Kt2" secondAttribute="centerX" id="fE0-vb-OkB"/>
                             <constraint firstItem="MVF-sp-3Um" firstAttribute="width" secondItem="tqB-a2-Kt2" secondAttribute="width" multiplier="0.9" id="kpp-Tb-9Xg"/>
