@@ -40,6 +40,8 @@ extension PlanetDetailViewController : UIViewControllerTransitioningDelegate {
         let transitionAnimator = popupViewAnimationController()
         transitionAnimator.isPresenting = true
         transitionAnimator.originalFrame = self.originalFrame
+        transitionAnimator.planetViewFrame = self.view.convert(self.planetView.planetImageView.frame, from: self.planetView)
+        transitionAnimator.planetImageName = planetInfo.imageName
         return transitionAnimator
     }
     
@@ -47,6 +49,8 @@ extension PlanetDetailViewController : UIViewControllerTransitioningDelegate {
         let transitionAnimator = popupViewAnimationController()
         transitionAnimator.isPresenting = false
         transitionAnimator.originalFrame = self.originalFrame
+        transitionAnimator.planetViewFrame = self.view.convert(self.planetView.planetImageView.frame, from: self.planetView)
+        transitionAnimator.planetImageName = planetInfo.imageName
         return transitionAnimator
     }
 }
